@@ -1,18 +1,18 @@
 document.addEventListener('DOMContentLoaded', function () {
     let imagenes = [
-        { img: '/src/retrato/1.JPG' },
-        { img: '/src/retrato/2.jpg' },
-        { img: '/src/retrato/3.JPG' },
-        { img: '/src/retrato/4.JPG' },
-        { img: '/src/retrato/5.JPG' },
-        { img: '/src/retrato/6.jpg' },
-        { img: '/src/retrato/7.JPG' },
-        { img: '/src/retrato/8.JPG' },
-        { img: '/src/retrato/9.JPG' },
-        { img: '/src/retrato/10.JPG' },
-        { img: '/src/retrato/11.JPG' },
-        { img: '/src/retrato/12.JPG' },
-        { img: '/src/retrato/13.jpg' },
+        { img: 'src/retrato/1.JPG' },
+        { img: 'src/retrato/2.jpg' },
+        { img: 'src/retrato/3.JPG' },
+        { img: 'src/retrato/4.JPG' },
+        { img: 'src/retrato/5.JPG' },
+        { img: 'src/retrato/6.jpg' },
+        { img: 'src/retrato/7.JPG' },
+        { img: 'src/retrato/8.JPG' },
+        { img: 'src/retrato/9.JPG' },
+        { img: 'src/retrato/10.JPG' },
+        { img: 'src/retrato/11.JPG' },
+        { img: 'src/retrato/12.JPG' },
+        { img: 'src/retrato/13.jpg' },
        
     ]
 

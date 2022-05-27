@@ -1,16 +1,16 @@
 document.addEventListener('DOMContentLoaded', function () {
     let imagenes = [
-        { img: '/src/industrial/1.jpg' },
-        { img: '/src/industrial/2.JPG' },
-        { img: '/src/industrial/3.JPG' },
-        { img: '/src/industrial/4.JPG' },
-        { img: '/src/industrial/5.JPG' },
-        { img: '/src/industrial/6.jpg' },
-        { img: '/src/industrial/7.jpg' },
-        { img: '/src/industrial/8.jpg' },
-        { img: '/src/industrial/9.jpg' },
-        { img: '/src/industrial/10.JPG'},
-        { img: '/src/industrial/11.JPG'}
+        { img: 'src/industrial/1.jpg' },
+        { img: 'src/industrial/2.JPG' },
+        { img: 'src/industrial/3.JPG' },
+        { img: 'src/industrial/4.JPG' },
+        { img: 'src/industrial/5.JPG' },
+        { img: 'src/industrial/6.jpg' },
+        { img: 'src/industrial/7.jpg' },
+        { img: 'src/industrial/8.jpg' },
+        { img: 'src/industrial/9.jpg' },
+        { img: 'src/industrial/10.JPG'},
+        { img: 'src/industrial/11.JPG'}
 
     ]
 
