@@ -1,0 +1,619 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto+Mono&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+
+}
+
+body {
+    font-family: sans-serif;
+
+}
+
+main {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+
+
+}
+
+
+
+section[id] {
+    scroll-margin-top: 80px;
+}
+
+.header {
+
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 80px;
+    transition: 0.7s;
+    z-index: 1;
+}
+
+.scroll-color {
+    background-color: rgb(4, 24, 41);
+
+}
+
+.nav {
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+}
+
+#container-logo {
+    display: flex;
+    width: 100%;
+    height: 80px;
+    align-items: center;
+    margin: 0px 20px;
+
+}
+
+#text-logo {
+    color: white;
+    align-items: center;
+    text-align: center;
+    margin-left: 10px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#logo {
+
+    background-image: url(../src/Logo.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 80px;
+    height: 80px;
+
+}
+
+
+.nav-menu {
+    display: flex;
+    margin-right: 3rem;
+    list-style: none;
+}
+
+.nav-menu-item {
+    font-size: 15px;
+    margin: 0 10px;
+    line-height: 80px;
+    text-transform: uppercase;
+    width: max-content;
+}
+
+.nav-menu-link {
+    padding: 8px 12px;
+    border-radius: 3px;
+    font-size: 1.6rem;
+    transition: 1s;
+}
+
+.nav-menu-link:hover,
+.nav-menu-link_active {
+    background-color: rgb(15, 55, 90);
+}
+
+.nav-toggle {
+    width: 10rem;
+    font-size: 1rem;
+    background-color: transparent;
+    border-style: none;
+    color: white;
+    display: none;
+
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    transition: all .1s ease-in-out;
+    background-image: url(../src/professional-camera-on-blurred.jpg);
+    animation: banner 28s infinite linear;
+}
+
+.banner-content {
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.banner-content p {
+    font-size: 1.6rem;
+}
+
+.banner-content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    text-align: center;
+
+}
+
+.banner-content p {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.banner-content a {
+    text-transform: uppercase;
+    border: solid 1px white;
+    padding: 9px 20px;
+    text-decoration: none;
+    color: white;
+    border-radius: 20px;
+    transition: all .3s ease-in-out;
+}
+
+.banner-content a:hover {
+    background-color: white;
+    color: rgb(4, 53, 90);
+}
+
+.about-me {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #CCCCCC;
+}
+
+.about-me-header {
+
+
+    width: 75%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+
+
+}
+
+
+
+.about-me h2 {
+    font-size: 3.5rem;
+    text-align: center;
+    font-weight: 1;
+    font-family: 'Roboto Mono', monospace;
+    margin-bottom: 1rem;
+}
+
+hr {
+    border-color: white;
+    border-width: 1px;
+}
+
+.retrato {
+
+    width: 150px;
+    height: auto;
+    border-radius: .5rem;
+    margin-bottom: 5rem;
+}
+
+.separator {
+    width: 75%;
+}
+
+.about-me-header h1 {
+    font-size: 4rem;
+    text-align: center;
+    color: white;
+    text-shadow: 4px 4px 2px rgba(150, 150, 150, 1);
+    margin-bottom: 3rem;
+}
+
+.about-me-text {
+    width: 75%;
+}
+
+.about-me p {
+
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 2rem;
+
+}
+
+
+.img {
+    display: flex;
+    margin: 60px auto 10px auto;
+    width: 75px;
+    height: 75px;
+    border: 1px solid #f0f0f0;
+    border-radius: 50%;
+    font-size: 11px;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+    z-index: 99;
+    background-color: #152f50;
+}
+
+
+.portafolio {
+    width: 100%;
+    height: 60vh;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    gap: 20px;
+
+
+
+}
+
+.portafolio h1 {
+    font-size: 3rem;
+    border-bottom: solid .1rem rgb(0, 0, 0);
+    padding: .5rem;
+    margin-top: 2rem;
+    color: black;
+    letter-spacing: 2px;
+
+}
+
+
+.container-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.card {
+
+    width: 30rem;
+    height: 40rem;
+    border-radius: .5rem;
+    background-image: var(--i);
+    background-size: cover;
+    transition: .3s;
+    cursor: pointer;
+
+
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(36, 35, 35, 0.4);
+    opacity: 0;
+    transition: .5S;
+}
+
+.content h2,
+a {
+    color: rgba(255, 255, 255, .8);
+    font-size: 2rem;
+    margin: 10px 0;
+    font-family: 'Roboto Mono', monospace;
+
+
+}
+
+.card:hover .content {
+    opacity: 1;
+
+}
+
+.card:hover {
+    transform: scale(1.1);
+
+}
+
+.contact{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/src/sep09.jpg);
+    background-size: cover;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.contact h1 {
+    color: #f0f0f0;
+    text-align: center;
+    font-size: 3rem;
+    letter-spacing: 1rem;
+    margin-bottom: 2rem;
+}
+.container-contact{
+    display: flex;
+    width: 60%;
+    height: 80%;
+    align-items: center;
+    justify-content: center;
+    
+    
+    
+    
+}
+
+.btn-wsp2{
+    border-radius: 30px;
+    padding-top: 2.5rem;
+    font-size: 5rem;
+    width: 15rem;
+    height: 15rem;
+    background-color: rgb(50, 144, 18);
+    text-align: center;
+    
+    
+}
+
+.btn-wsp2:hover{
+    background-color: rgb(31, 88, 12);
+}
+
+.contact .column1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, .5);
+    width: 60%;
+    height: 100%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+   
+    
+}
+.contact .column2{
+
+    background-color: rgb(37, 37, 37);
+    width: 40%;
+    height: 100%;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+
+    
+}
+
+.column2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-info{
+    width: 90%;
+    height: 90%;
+}
+
+.container-info{
+    height: 90%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+}
+
+.contact-info h2 {
+    font-size: 2rem;
+    color: grey;
+    
+}
+.contact-info p {
+
+    font-size: 1.5rem;
+    color: white;
+}
+
+
+@keyframes banner {
+    0% {
+        background-image: url(../src/professional-camera-on-blurred.jpg);
+    }
+
+    25% {
+        background-image: url(../src/professional-camera-on-blurred.jpg);
+    }
+
+    26% {
+        background-image: url(../src/closeup-shot-of-black-camera-lens.jpg);
+    }
+
+    50% {
+        background-image: url(../src/closeup-shot-of-black-camera-lens.jpg);
+    }
+
+    51% {
+        background-image: url(../src/professional-camera-close-up-on-photographer-s-desktop-on-blurred-background.jpg);
+    }
+
+    75% {
+        background-image: url(../src/professional-camera-close-up-on-photographer-s-desktop-on-blurred-background.jpg);
+    }
+
+    76% {
+        background-image: url(../src/still-life-shot-of-dslr-camera-lens.jpg);
+    }
+
+    100% {
+        background-image: url(../src/still-life-shot-of-dslr-camera-lens.jpg);
+    }
+}
+
+
+.btn-wsp {
+    position: fixed;
+    width: 5.5rem;
+    height: 5.5rem;
+    line-height: 68px;
+    bottom: 3rem;
+    right: 3rem;
+    background-color: rgb(50, 144, 18);
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    border-radius: 50px;
+    cursor: pointer;
+    
+    animation: wave 1.2s infinite;
+}
+
+.btn-wsp:hover {
+    background-color: rgb(32, 92, 12);
+    transition: .3s all ease;
+    transform: scale(1.1);
+}
+
+
+
+
+@keyframes wave {
+
+    0% {
+        box-shadow: 0 0 0 0 rgba(51, 183, 4, 0.85);
+
+    }
+
+    100% {
+        box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+    }
+
+}
+
+
+
+@media (max-width: 1000px) {
+
+    section[id] {
+        scroll-margin-top: 60px;
+    }
+
+
+
+    .header {
+        height: 60px;
+
+
+    }
+
+    #logo {
+        width: 60px;
+        height: 60px;
+        color: white;
+    }
+
+    #container-logo {
+        display: flex;
+        width: 100%;
+        height: 60px;
+        align-items: center;
+
+    }
+
+    .nav {
+        background-color: transparent;
+    }
+
+    .nav-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgb(32, 56, 77);
+        position: fixed;
+        top: 60px;
+        padding: 20px 0;
+        width: 100vw;
+        height: calc(100% - 60px);
+        overflow-y: auto;
+        left: 100%;
+        transition: .3s;
+    }
+
+    .nav-menu-item {
+        line-height: 70px;
+    }
+
+    .nav-menu-link:hover,
+    .nav-menu-link_active {
+        background: none;
+        color: rgb(79, 128, 207);
+
+    }
+
+    .nav-toggle {
+        display: block;
+
+
+    }
+
+    .nav-menu-visible {
+        left: 0%;
+
+    }
+
+    main {
+        top: 0px;
+        height: calc(100% - 60px);
+    }
+
+    .container-cards {
+        flex-direction: column;
+        gap: 3rem;
+        padding: 10px;
+
+    }
+
+    .portafolio {
+        height: 180%;
+
+    }
+}
+
+@media (max-width: 400px) {
+
+    .about-me {
+        height: 180%;
+    }
+    .portafolio{
+        height: 130%;
+    }
+    .card{
+        width: 15rem;
+        height: 20rem;
+    }
+
+}

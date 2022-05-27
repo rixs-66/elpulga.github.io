@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto+Mono&display=swap');
+
+:root {
+    display: flex;
+    justify-content: center;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 10px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+
+
+}
+
+body {
+    background-image: linear-gradient(180deg, #fdfcfb 0%, #E2D1C3 100%);
+}
+
+
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 80px;
+}
+
+header h1 {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    letter-spacing: .7rem;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem rem;
+    width: 80vw;
+    
+
+}
+
+.columna {
+    flex: 33.33%;
+    max-width: 33.33%;
+    padding: 0rem 1rem;
+    
+}
+
+.columna img {
+    margin-top: 2rem;
+    vertical-align: middle;
+    width: 100%;
+    transition: all .3 ease;
+    box-shadow: 0px 0px 12px 2px rgba(0,0,0,0.51);
+    -webkit-box-shadow: 0px 0px 12px 2px rgba(0,0,0,0.51);
+    -moz-box-shadow: 0px 0px 12px 2px rgba(0,0,0,0.51);
+    border-radius: 1rem;
+    
+
+
+}
+
+.columna img:hover {
+    cursor: pointer;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, .5);
+    transform: scale(1.1);
+}
+
+.overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all -7s ease;
+    visibility: hidden;
+
+}
+
+.overlay .slideShow {
+
+    width: 80%;
+    height: 90%;
+    background-color: rgba(255, 255, 255, .8);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.slideShow img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.btn-cerrar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    width: 3rem;
+    height: 3rem;
+    font-size: 3.5rem;
+    transition: all .2 ease;
+
+}
+
+.btn-cerrar:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.left-arrow {
+    width: 7rem;
+    height: 7rem;
+    color: black;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+
+
+}
+
+
+.right-arrow {
+
+    width: 7rem;
+    height: 7rem;
+    color: black;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+
+}
+
+.left-arrow:hover {
+    transform: scale(1.2);
+}
+
+.right-arrow:hover {
+    transform: scale(1.2);
+}
+
+
+@media screen and (max-width: 800px) {
+
+    .slideShow img {
+        width: 90%;
+    }
+
+    .overlay {}
+
+    @media screen and (max-width: 600px) {
+
+        .columna {
+            flex: 100%;
+            max-width: 100%;
+        }
+
+
+    }
