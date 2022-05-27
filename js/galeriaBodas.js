@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     let imagenes = [
-        { img: 'elpulga.github.io/src/bodas/1.JPG' },
+        { img: 'src/bodas/1.JPG' },
         { img: 'src/bodas/2.jpg' },
         { img: 'src/bodas/3.JPG' },
         { img: 'src/bodas/4.JPG' },
