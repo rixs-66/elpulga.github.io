@@ -1,17 +1,17 @@
 document.addEventListener('DOMContentLoaded', function () {
     let imagenes = [
-        { img: 'src/bodas/1.JPG' },
-        { img: 'src/bodas/2.jpg' },
-        { img: 'src/bodas/3.JPG' },
-        { img: 'src/bodas/4.JPG' },
-        { img: 'src/bodas/5.JPG' },
-        { img: 'src/bodas/6.JPG' },
-        { img: 'src/bodas/7.JPG' },
-        { img: 'src/bodas/8.JPG' },
-        { img: 'src/bodas/9.JPG' },
-        { img: 'src/bodas/10.JPG' },
-        { img: 'src/bodas/11.JPG' },
-        { img: 'src/bodas/12.JPG' },
+        { img: '../src/bodas/1.JPG' },
+        { img: '../src/bodas/2.jpg' },
+        { img: '../src/bodas/3.JPG' },
+        { img: '../src/bodas/4.JPG' },
+        { img: '../src/bodas/5.JPG' },
+        { img: '../src/bodas/6.JPG' },
+        { img: '../src/bodas/7.JPG' },
+        { img: '../src/bodas/8.JPG' },
+        { img: '../src/bodas/9.JPG' },
+        { img: '../src/bodas/10.JPG' },
+        { img: '../src/bodas/11.JPG' },
+        { img: '../src/bodas/12.JPG' },
         
     ]
 
