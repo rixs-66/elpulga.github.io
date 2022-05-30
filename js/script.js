@@ -11,4 +11,11 @@ window.addEventListener("scroll", () =>
     header.classList.toggle("scroll-color",window.scrollY>0);
 })
 
+const menulinks = document.querySelectorAll('.nav-menu a[href^="#"]' );
+ menulinks.forEach(menulink => {
+     menulink.addEventListener("click" , function(){
+         navMenu.classList.remove("nav-menu-visible");
+     })
+ })
+
 
