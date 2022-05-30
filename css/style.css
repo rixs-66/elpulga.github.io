@@ -517,9 +517,10 @@ a {
 
 @media (max-width: 1300px){
 
-    .container{
+    .container-contact{
         width: 90%;
     }
+    
 }
 
 
@@ -605,8 +606,12 @@ a {
     }
 
     .portafolio {
-        height: 180%;
+        height: auto;
 
+    }
+
+    .about-me {
+        height: auto;
     }
 
     .contact .column1 {
@@ -614,7 +619,9 @@ a {
     }
 
     .contact .column2 {
-        width: auto
+        width: auto;
+         background-color: rgba(0, 0, 0, 0.2);
+        
     }
 
     .contact h1 {
@@ -625,6 +632,7 @@ a {
         width: 90%;
     }
 
+  
 
 
 }
