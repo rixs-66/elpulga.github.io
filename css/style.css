@@ -337,18 +337,18 @@ a {
 
 }
 
-.contact{
+.contact {
     width: 100vw;
     height: 100vh;
     background-image: url(../src/sep09.jpg);
     background-size: cover;
-    display: block;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 
 }
+
 .contact h1 {
     color: #f0f0f0;
     text-align: center;
@@ -356,19 +356,17 @@ a {
     letter-spacing: 1rem;
     margin-bottom: 2rem;
 }
-.container-contact{
+
+.container-contact {
     display: flex;
     width: 60%;
     height: 80%;
     align-items: center;
     justify-content: center;
-    
-    
-    
-    
+
 }
 
-.btn-wsp2{
+.btn-wsp2 {
     border-radius: 30px;
     padding-top: 2.5rem;
     font-size: 5rem;
@@ -376,11 +374,11 @@ a {
     height: 15rem;
     background-color: rgb(50, 144, 18);
     text-align: center;
-    
-    
+
+
 }
 
-.btn-wsp2:hover{
+.btn-wsp2:hover {
     background-color: rgb(31, 88, 12);
 }
 
@@ -394,10 +392,11 @@ a {
     height: 100%;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
-   
-    
+
+
 }
-.contact .column2{
+
+.contact .column2 {
 
     background-color: rgb(37, 37, 37);
     width: 40%;
@@ -405,34 +404,36 @@ a {
     border-bottom-right-radius: 5px;
     border-top-right-radius: 5px;
 
-    
+
+
 }
 
-.column2{
+.column2 {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.contact-info{
+.contact-info {
     width: 90%;
     height: 90%;
 }
 
-.container-info{
+.container-info {
     height: 90%;
-    
+
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    
+
 }
 
 .contact-info h2 {
     font-size: 2rem;
     color: grey;
-    
+
 }
+
 .contact-info p {
 
     font-size: 1.5rem;
@@ -488,7 +489,7 @@ a {
     text-align: center;
     border-radius: 50px;
     cursor: pointer;
-    
+
     animation: wave 1.2s infinite;
 }
 
@@ -514,6 +515,12 @@ a {
 
 }
 
+@media (max-width: 1300px){
+
+    .container-contact{
+        width: 90%;
+    }
+}
 
 
 @media (max-width: 1000px) {
@@ -601,6 +608,25 @@ a {
         height: 180%;
 
     }
+
+    .contact .column1 {
+        display: none;
+    }
+
+    .contact .column2 {
+        width: auto
+    }
+
+    .contact h1 {
+        font-size: 2rem;
+    }
+
+    .container-contact{
+        width: 90%;
+    }
+
+
+
 }
 
 @media (max-width: 400px) {
@@ -608,10 +634,12 @@ a {
     .about-me {
         height: 180%;
     }
-    .portafolio{
+
+    .portafolio {
         height: 130%;
     }
-    .card{
+
+    .card {
         width: 15rem;
         height: 20rem;
     }
