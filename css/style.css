@@ -520,6 +520,11 @@ a {
     .container-contact{
         width: 90%;
     }
+
+    .portafolio{
+        height: auto;
+        margin-bottom: 2rem;
+    }
     
 }
 
@@ -614,6 +619,10 @@ a {
         height: auto;
     }
 
+    .contact {
+        height: auto;
+    }
+
     .contact .column1 {
         display: none;
     }
@@ -651,5 +660,7 @@ a {
         width: 15rem;
         height: 20rem;
     }
+
+    
 
 }
