@@ -517,7 +517,7 @@ a {
 
 @media (max-width: 1300px){
 
-    .container-contact{
+    .container{
         width: 90%;
     }
 }
@@ -632,11 +632,11 @@ a {
 @media (max-width: 400px) {
 
     .about-me {
-        height: 180%;
+        height: auto;
     }
 
     .portafolio {
-        height: 130%;
+        height: auto;
     }
 
     .card {
